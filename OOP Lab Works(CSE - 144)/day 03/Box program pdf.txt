@@ -1,0 +1,63 @@
+Exercise 01:Write a C++ program to define a class BOX with Data member:(length, breadth and width) and member function
+(intput_value(); print_value(); and volume()).Now find the volume fo a box by accessing the members of this class using 
+its objects.
+
+Source Code:
+#include<bits/stdc++.h>
+using namespace std;
+class BOX
+{
+    double length, breadth, height;
+public:
+    void input_value()
+    {
+        cin >> length >> breadth >> height;
+    }
+    void print_value()
+    {
+        cout << "Length = " << length << endl;
+        cout << "Breadth = " << breadth << endl;
+        cout << "Height = " << height << endl;
+    }
+    double volume();
+};
+double BOX::volume()
+{
+    return height * length * breadth;
+}
+int main()
+{
+//    freopen("in.txt", "rt", stdin);
+//    freopen("out.txt", "wt", stdout);
+    int n;
+    cin >> n;
+    BOX a[n];
+    for(int i = 0; i < n; i++)
+    {
+        cout << "Information for object " << i + 1 << " :" << endl;
+        a[i].input_value();
+        a[i].print_value();
+        cout << "Volume = " <<  a[i].volume() << endl;
+    }
+    return 0;
+}
+Input:									
+3
+7.0 5.5 8
+2 9.8 7
+4 6 12
+
+Output:
+
+Information for object 1 :
+Length = 4
+Breadth = 7
+Height = 8
+Volume = 224
+Information for object 2 :
+Length = 5.5
+Breadth = 6.5
+Height = 7
+Volume = 250.25
+
+

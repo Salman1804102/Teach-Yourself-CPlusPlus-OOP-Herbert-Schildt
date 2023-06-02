@@ -1,0 +1,15 @@
+Information for object 1 :
+Length = 7
+Breadth = 5.5
+Height = 8
+Volume = 308
+Information for object 2 :
+Length = 2
+Breadth = 9.8
+Height = 7
+Volume = 137.2
+Information for object 3 :
+Length = 4
+Breadth = 6
+Height = 12
+Volume = 288
